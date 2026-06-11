@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <!-- Link para a folha de estilo CSS externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu de Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Agro<span>Sustentável</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#quiz">Quiz Interativo</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Hero (Início) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <!-- Efeito digitando criado via JavaScript -->
+            <h1 class="typed-text">O campo do futuro é sustentável.</h1>
+            <p>Descubra como a tecnologia e a preservação caminham juntas para alimentar o mundo.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section sobre">
+        <div class="container">
+            <h2>O que é o Agro Forte?</h2>
+            <p>É a união entre a alta produtividade no campo e a conservação dos recursos naturais. Produzir mais, utilizando tecnologias limpas e respeitando o meio ambiente, garante alimento para o presente sem comprometer o futuro.</p>
+        </div>
+    </section>
+
+    <!-- Seção Práticas (Cards Animados) -->
+    <section id="praticas" class="section">
+        <div class="container">
+            <h2>Práticas Inovadoras</h2>
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Plantio Direto</h3>
+                    <p>Técnica que protege o solo contra a erosão e mantém a umidade, reduzindo a necessidade de água.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon">♻️</div>
+                    <h3>Rotação de Culturas</h3>
+                    <p>Altera os tipos de plantas cultivadas para melhorar a fertilidade e evitar pragas naturalmente.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon">☀️</div>
+                    <h3>Energia Renovável</h3>
+                    <p>Uso de energia solar e biomassa nas propriedades para diminuir a pegada de carbono.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quiz Interativo -->
+    <section id="quiz" class="section quiz-section">
+        <div class="container">
+            <h2>Teste seus conhecimentos</h2>
+            <div id="quiz-container" class="quiz-box">
+                <div class="question" id="question-text">Qual destas práticas ajuda a conservar o solo?</div>
+                <div class="options">
+                    <button class="option-btn" onclick="selectOption(false)">Desmatamento</button>
+                    <button class="option-btn" onclick="selectOption(true)">Plantio Direto</button>
+                    <button class="option-btn" onclick="selectOption(false)">Monocultura sem pausas</button>
+                </div>
+                <div id="result-feedback" class="feedback"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Agro Forte. Construindo um futuro sustentável.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
